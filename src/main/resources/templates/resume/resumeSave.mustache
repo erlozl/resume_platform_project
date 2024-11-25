@@ -1,0 +1,167 @@
+{{>layout/header}}
+<!-- main -->
+<main class="resume_wrap" id="resume_write_page">
+    <div id="container">
+        <section>
+            <h2 class="sub_title">이력서 등록</h2>
+            <form action="">
+                <div class="resume_section">
+                    <h3 class="resume_tit">홍길동 이력서_241029</h3>
+                    <article>
+                        <div class="resume_intro">
+                            <div class="resume_profile_img">
+                                <img src="/image/img/img_def_profile.png" alt="프로필사진">
+                            </div>
+                            <ul class="resume_intro_cont">
+                                <li class="resume_intro_tit">
+                                    홍길동
+                                </li>
+                                <li class="common_field">
+                                    <img src="/image/icon/icon_mail.svg" alt="이메일">
+                                    <input type="text">
+                                </li>
+                                <li>
+                                    <ul class="common_area resume_area">
+                                        <li class="common_field">
+                                            <img src="/image/icon/icon_calendar.svg" alt="생년월일">
+                                            <input type="text">
+                                        </li>
+                                        <li class="common_field">
+                                            <img src="/image/icon/icon_phone.svg" alt="핸드폰번호">
+                                            <input type="text">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="common_field">
+                                    <img src="/image/icon/icon_address.svg" alt="주소">
+                                    <input type="text">
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="skill_area">
+                        <h4>개발 직무</h4>
+                        <ul class="skill_item">
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="backend_dev">
+                                    <label for="backend_dev" class="checkbox_label">백엔드 개발자</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="frontend_dev">
+                                    <label for="frontend_dev" class="checkbox_label">프론트엔드 개발자</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="fullstack_dev">
+                                    <label for="fullstack_dev" class="checkbox_label">웹 풀스택 개발자</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="ios_dev">
+                                    <label for="ios_dev" class="checkbox_label">IOS 개발자</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="crossplatform_dev">
+                                    <label for="crossplatform_dev" class="checkbox_label">크로스 플랫폼 앱 개발자</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="android_dev">
+                                    <label for="android_dev" class="checkbox_label">안드로이드 개발자</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="skill_area">
+                        <h4>기술 스택 ( 업무 툴/스킬 )</h4>
+                        <ul class="skill_item">
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="Java">
+                                    <label for="Java" class="checkbox_label">Java</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="Javascript">
+                                    <label for="Javascript" class="checkbox_label">Javascript</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="Spring">
+                                    <label for="Spring" class="checkbox_label">Spring</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="JQuery">
+                                    <label for="JQuery" class="checkbox_label">JQuery</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="HTML">
+                                    <label for="HTML" class="checkbox_label">HTML</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="React">
+                                    <label for="React" class="checkbox_label">React</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="JSP">
+                                    <label for="JSP" class="checkbox_label">JSP</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="Vue">
+                                    <label for="Vue" class="checkbox_label">Vue.js</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="checkbox" id="Oracle">
+                                    <label for="Oracle" class="checkbox_label">Oracle</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="skill_area">
+                        <h4>경력</h4>
+                        <ul class="skill_item">
+                            <li>
+                                <div class="check">
+                                    <input type="radio" id="newbie" name="career">
+                                    <label for="newbie" class="checkbox_label">신입</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="check">
+                                    <input type="radio" id="experienced" name="career">
+                                    <label for="experienced" class="checkbox_label">경력</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <div class="save_btn">
+                        <button type="button" class="common_btn" id="saveBtn">저장하기</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+{{> layout/footer}}
