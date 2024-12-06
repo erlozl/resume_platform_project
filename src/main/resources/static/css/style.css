@@ -17,6 +17,8 @@
   --back_03: #c8cfce;
   --def_wh: #fff;
   --def_bl: #000;
+  --valid: #cf1e1e;
+  --in_valid: #27984f;
 }
 
 * {
@@ -103,6 +105,10 @@ body {
 .auth_field {
   max-width: 420px;
   width: 100%;
+}
+#passwordMessage {
+  margin-top: 8px;
+  font-size: 12px;
 }
 /* button */
 .common_btn_box {

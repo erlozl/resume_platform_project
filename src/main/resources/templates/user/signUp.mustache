@@ -6,33 +6,35 @@
             <div class="common_title">
                 <h1>SIGN UP</h1>
             </div>
-            <form action="" class="auth_field">
+            <form id="signUpForm" action="/user/sign_up" method="post" class="auth_field">
                 <div class="common_area">
                     <ul class="common_field">
                         <li><label for="id">아이디</label></li>
-                        <li><input type="text" id="id" placeholder="아이디를 입력해주세요."></li>
+                        <li><input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요."></li>
                     </ul>
                     <div>
                         <button type="button" class="action_btn" id="checkBtn">중복확인</button>
                     </div>
                 </div>
                 <ul class="common_field">
-                    <li><label for="nickname">닉네임</label></li>
-                    <li><input type="text" id="nickname" placeholder="닉네임을 입력해주세요."></li>
+                    <li><label for="nickname">이름</label></li>
+                    <li><input type="text" name="username" id="nickname" placeholder="이름을 입력해주세요."></li>
                 </ul>
                 <ul class="common_field">
                     <li><label for="pw">비밀번호</label></li>
-                    <li><input type="text" id="pw" placeholder="비밀번호를 입력해주세요."></li>
+                    <li><input type="password" name="password" id="pw" placeholder="비밀번호를 입력해주세요."></li>
                 </ul>
-                <ul class="common_field">
+                <ul class="common_field pw_check_txt">
                     <li><label for="pwCheck">비밀번호 확인</label></li>
-                    <li><input type="text" id="pwCheck" placeholder="비밀번호를 입력해주세요."></li>
+                    <li><input type="password" name="passwordCheck" id="pwCheck" placeholder="비밀번호를 한번 더 입력해주세요."></li>
                 </ul>
                 <div class="common_btn_box">
-                    <button type="button" class="common_btn" id="signUpBtn">회원가입</button>
+                    <button type="submit" class="common_btn" id="signUpBtn">회원가입</button>
                 </div>
             </form>
         </section>
     </div>
 </main>
+
+<script src="script.js"></script>
 {{> layout/footer}}

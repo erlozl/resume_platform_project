@@ -10,7 +10,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,7 +17,6 @@ import lombok.Setter;
 @Setter
 @Table(name = "resume_tb")
 @Entity
-@Builder
 public class Resume {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,20 +36,4 @@ public class Resume {
     private String resumeProfileUrl;
     private String hasSkillId;
     private String hasPositionId;
-
-    @Builder
-    public Resume(Integer id, String userName, String mainTitle, LocalDate birth, String tel, String address,
-            String career, String resumeProfileUrl, String hasSkillId, String hasPositionId) {
-        this.id = id;
-        this.userName = userName;
-        this.mainTitle = mainTitle;
-        this.birth = birth;
-        this.tel = tel;
-        this.address = address;
-        this.career = career;
-        this.resumeProfileUrl = resumeProfileUrl;
-        this.hasSkillId = hasSkillId;
-        this.hasPositionId = hasPositionId;
-    }
-
 }

@@ -28,6 +28,6 @@ public class ResumeController {
 
     @GetMapping("/main")
     public String resumeMainForm() {
-        return "resume/resumeMain";
+        return "main";
     }
 }

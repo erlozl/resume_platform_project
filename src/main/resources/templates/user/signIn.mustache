@@ -6,17 +6,17 @@
             <div class="common_title">
                 <h1>SIGN IN</h1>
             </div>
-            <form action="" class="auth_field">
+            <form action="/user/sign_in" method="post" class="auth_field">
                 <ul class="common_field">
-                    <li><label for="id">아이디</label></li>
-                    <li><input type="text" id="id" placeholder="아이디를 입력해주세요."></li>
+                    <li><label for="userid">아이디</label></li>
+                    <li><input type="text" id="userid" placeholder="아이디를 입력해주세요." name="userid"></li>
                 </ul>
                 <ul class="common_field">
                     <li><label for="pw">비밀번호</label></li>
-                    <li><input type="text" id="pw" placeholder="비밀번호를 입력해주세요."></li>
+                    <li><input type="password" id="pw" placeholder="비밀번호를 입력해주세요." name="password"></li>
                 </ul>
                 <div class="common_btn_box">
-                    <button type="button" class="common_btn" id="signInBtn">로그인</button>
+                    <button type="submit" class="common_btn" id="signInBtn">로그인</button>
                 </div>
             </form>
         </section>

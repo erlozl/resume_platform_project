@@ -38,4 +38,4 @@ spring:
 
 logging:
   level:
-    "[org.hibernate.type]": TRACE
+    "[org.hibernate.type]": DEBUG
